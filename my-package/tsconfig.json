@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/@adonisjs/mrm-preset/_tsconfig",
+  "files": [
+    "./node_modules/@adonisjs/core/build/adonis-typings/index.d.ts",
+    "./node_modules/@adonisjs/lucid/build/adonis-typings/index.d.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "build",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "types": [
+      "@adonisjs/core",
+      "@adonisjs/lucid"
+    ]
+  }
+}
