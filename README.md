@@ -75,3 +75,4 @@ And routes defined by the main app:
 - DONE ~~Expose models in `my-package` to be used in `main-app` (such as in seeder)~~
 - Make `instruction` script to generate some file in `main-app` using templates in `my-package`, such as DB migration and seeder.
 - Documentation
+- Apply standard config of Adonis package (eslint, commit convention, etc.)
