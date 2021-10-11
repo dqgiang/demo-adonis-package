@@ -5,6 +5,7 @@
   "types": "./build/adonis-typings/index.d.ts",
   "main": "./build/providers/MyPackageProvider.js",
   "dependencies": {
+    "@adonisjs/assembler": "^5.3.7",
     "@adonisjs/core": "^5.3.4",
     "@adonisjs/lucid": "^16.2.1",
     "reflect-metadata": "^0.1.13"
@@ -17,11 +18,10 @@
   "scripts": {
     "mrm": "mrm --preset=@adonisjs/mrm-preset",
     "clean": "rm -rf build",
-    "compile": "npm run clean && tsc",
+    "compile": "node build.js",
     "build": "npm run compile"
   },
   "author": "",
-  "license": "ISC",
   "adonisjs": {
     "types": "my-package",
     "providers": [

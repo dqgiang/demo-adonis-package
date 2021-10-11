@@ -7,18 +7,15 @@ export default class MyProvider {
   public static needsApplication = true
   constructor(protected app: ApplicationContract) {}
 
-  public register(): void {
-    const val = this.app.container.use('Adonis/Core/Validator')
-    this.app.container.bind('Module/MyController', async () => {
-      const { default: MyController } = await import('../src/Controllers/MyController')
-      return new MyController(val, this.app.container)
+  public async register() {
+    const { default: User } = await import('../src/Models/User')
+
+    this.app.container.bind('IoCNamespace/Models', () => {
+      return { User }
     })
   }
 
   public async boot() {
-    this.app.container.withBindings(['Adonis/Core/Route'], async (Route) => {
-      const { registerRoutes } = await import('../src/Routes')
-      await registerRoutes(Route)
-    })
+    await import('../src/start/routes')
   }
 }

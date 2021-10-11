@@ -23,6 +23,9 @@
       ],
       "Database/*": [
         "./database/*"
+      ],
+      "AliasPkgNamespace/*": [
+        "./node_modules/my-package/build/*"
       ]
     },
     "types": [

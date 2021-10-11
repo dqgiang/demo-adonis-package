@@ -7,9 +7,11 @@
   "compilerOptions": {
     "outDir": "build",
     "sourceMap": true,
+    "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "types": [
+      "@types/node",
       "@adonisjs/core",
       "@adonisjs/lucid"
     ]

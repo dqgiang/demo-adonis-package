@@ -23,3 +23,7 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.get('/', async () => {
   return { hello: 'world' }
 })
+
+Route.get('/ioc', 'UsersController.index')
+Route.get('/alias', 'UsersController.indexAlias')
+Route.get('/pkg', 'PackageController.invokeByApp').namespace('AliasPkgNamespace/src/Controllers')

@@ -11,7 +11,8 @@
     "App": "app",
     "Config": "config",
     "Database": "database",
-    "Contracts": "contracts"
+    "Contracts": "contracts",
+    "AliasPkgNamespace": "node_modules/my-package/build"
   },
   "preloads": [
     "./start/routes",

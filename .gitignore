@@ -13,3 +13,4 @@ dist
 shrinkwrap.yaml
 .eslintcache
 .env
+**/tmp
