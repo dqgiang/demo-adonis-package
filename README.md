@@ -1,11 +1,13 @@
-# Demo Adonis Package
+# Demo Adonis v5 Package
 
-**Experimental**. Create an external package with custom routes, controllers and models. Used by `main-app`.
+**:warning: Experimental**.
 
-## Target
+Create an external package for Adonis v5 with custom routes, controllers and models.
 
-1. Develop a separate package from the main app that can be distributed independently.
-2. Keep the nice DevEx while working in both the main app and the package: type check, intellisense, etc.
+## Motivation
+
+1. Develop a separate package out of the main app that can be distributed independently.
+2. Keep the nice DevEx while working in both the main app and the package: type check, intellisense, IoC, etc.
 3. Package can declare custom routes, controllers, models, etc. Some are booted automatically into the main app without developer doing anything.
 4. Main app can refer to stuff from the package, either through IoC resolve or standard module import (also with alias)
 
@@ -70,7 +72,7 @@ And routes defined by the main app:
 - http://localhost:3333/pkg
 
 
-## TODO
+## TO DO
 
 - DONE ~~Expose models in `my-package` to be used in `main-app` (such as in seeder)~~
 - Make `instruction` script to generate some file in `main-app` using templates in `my-package`, such as DB migration and seeder.
